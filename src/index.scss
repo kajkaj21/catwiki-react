@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Mystery+Quest&display=swap");
+
+:root {
+  --special-font: "Mystery Quest", cursive;
+  --default-font-color: #291507;
+  --white: #fff;
+  --black: #000;
+  --accent-color: #e3e1dc;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Montserrat", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-size: 1.6rem;
+}

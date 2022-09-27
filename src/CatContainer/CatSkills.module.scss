@@ -1,0 +1,27 @@
+.Container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin-bottom: 3.2rem;
+
+  .SkillName {
+    font-size: 1.6rem;
+    font-weight: 700;
+  }
+
+  .Points {
+    display: flex;
+    gap: 0.85rem;
+
+    .Tile {
+      width: 6rem;
+      height: 1.2rem;
+      background-color: #e0e0e0;
+      border-radius: 8px;
+    }
+
+    .TileFilled {
+      background-color: #544439;
+    }
+  }
+}

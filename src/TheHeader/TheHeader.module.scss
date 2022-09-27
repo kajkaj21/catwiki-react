@@ -1,0 +1,13 @@
+.Header {
+  font-family: var(--special-font);
+
+  a {
+    text-decoration: none;
+
+    p {
+      display: inline-block;
+      font-size: 2.4rem;
+      color: var(--default-font-color);
+    }
+  }
+}

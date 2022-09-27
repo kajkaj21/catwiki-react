@@ -1,0 +1,202 @@
+.HeroSection {
+  display: flex;
+  flex-direction: column;
+  border-radius: 33px;
+  background-color: var(--accent-color);
+  overflow: hidden;
+  margin-bottom: 8rem;
+
+  &__Top {
+    padding: 2rem 3rem;
+    background: url("/HeroImagesm.webp") no-repeat;
+    color: var(--white);
+    object-fit: cover;
+    background-position: 30% 40%;
+    background-size: 100%;
+
+    @media screen and (min-width: 1200px) {
+      background: url("/HeroImagelg.webp");
+      background-position: 30% 40%;
+      background-size: 100%;
+    }
+
+    div {
+      width: 50%;
+
+      h2 {
+        font-family: var(--special-font);
+        font-size: 1.4rem;
+        margin-bottom: 0.8rem;
+
+        @media screen and (min-width: 886px) {
+          font-size: 3.2rem;
+          font-weight: 400;
+          margin-bottom: 1rem;
+        }
+        @media screen and (min-width: 1200px) {
+          font-size: 6.4rem;
+          font-weight: 400;
+          margin-bottom: 1.2rem;
+        }
+      }
+
+      p {
+        font-size: 1.2rem;
+        font-weight: 500;
+        margin-bottom: 2rem;
+
+        @media screen and (min-width: 886px) {
+          font-size: 1.8rem;
+          margin-bottom: 3.6rem;
+        }
+        @media screen and (min-width: 1200px) {
+          font-size: 2.4rem;
+          margin-bottom: 5.2rem;
+        }
+      }
+
+      input {
+        width: 70%;
+        border: 0;
+        border-radius: 999px;
+        padding: 0.7rem 1.4rem;
+        font-size: 1.2rem;
+        font-weight: 500;
+        font-family: inherit;
+        color: var(--default-font-color);
+
+        @media screen and (min-width: 886px) {
+          padding: 1.6rem 2rem;
+          font-size: 1.3rem;
+          margin-bottom: 3.6rem;
+        }
+
+        @media screen and (min-width: 1200px) {
+          padding: 2.4rem 2.8rem;
+          font-size: 1.8rem;
+          border-radius: 999px;
+        }
+
+        &::placeholder {
+          color: inherit;
+        }
+      }
+    }
+  }
+
+  &__Bottom {
+    padding: 2rem 3rem;
+    color: var(--default-font-color);
+
+    @media screen and (min-width: 886px) {
+      padding: 3.6rem 6.5rem;
+    }
+    @media screen and (min-width: 1200px) {
+      padding: 9.2rem 10.8rem;
+    }
+
+    h3 {
+      font-size: 1.2rem;
+      font-weight: 500;
+      padding-bottom: 0.5rem;
+      margin-bottom: 2.1rem;
+      position: relative;
+
+      @media screen and (min-width: 886px) {
+        font-size: 1.5rem;
+        margin-bottom: 3.5rem;
+      }
+      @media screen and (min-width: 1200px) {
+        font-size: 1.8rem;
+        margin-bottom: 4.8rem;
+      }
+
+      &::before {
+        position: absolute;
+        content: "";
+        bottom: 0;
+        left: 0;
+        width: 15%;
+        height: 0.3rem;
+        background-color: var(--default-font-color);
+      }
+    }
+
+    p {
+      font-size: 1.8rem;
+      font-weight: 700;
+      margin-bottom: 2.6rem;
+
+      @media screen and (min-width: 886px) {
+        font-size: 3.2rem;
+        margin-bottom: 3.6rem;
+      }
+      @media screen and (min-width: 1200px) {
+        font-size: 4.8rem;
+        margin-bottom: 4.6rem;
+        width: 60%;
+      }
+    }
+
+    .Grid {
+      display: grid;
+      align-items: center;
+      justify-content: center;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 1.3rem;
+      row-gap: 1.8rem;
+
+      a {
+        text-decoration: none;
+        color: var(--default-font-color);
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      @media screen and (min-width: 1300px) {
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 5rem;
+      }
+
+      &__Item {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        div {
+          width: 13.4rem;
+          height: 13.4rem;
+          margin-bottom: 1.2rem;
+
+          @media screen and (min-width: 600px) {
+            width: 22rem;
+            height: 22rem;
+          }
+
+          img {
+            border-radius: 17px;
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+      }
+      span {
+        font-size: 1.2rem;
+        font-weight: 600;
+
+        @media screen and (min-width: 886px) {
+          font-size: 1.5rem;
+        }
+        @media screen and (min-width: 1200px) {
+          font-size: 1.8rem;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+.App {
+  padding: 2.4rem 1.8rem 0;
+  width: 100%;
+  max-width: 150rem;
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: 886px) {
+    padding: 3rem 4rem 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 3.6rem 9.6rem 0;
+  }
+}
