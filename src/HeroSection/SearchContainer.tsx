@@ -17,6 +17,9 @@ const SearchContainer = (props: Props) => {
     if (inputRef.current) {
       inputRef.current.focus();
     }
+    if (catsCtx?.cats) {
+      setFilteredCats(catsCtx?.cats);
+    }
   }, []);
 
   const filterCats = () => {
@@ -43,19 +46,7 @@ const SearchContainer = (props: Props) => {
         onChange={filterCats}
       />
       <ul>
-        {catsCtx?.cats &&
-          filteredCats.length === 0 &&
-          catsCtx?.cats.map((cat: { id: string; name: string }) => {
-            return (
-              <Link
-                key={cat.id}
-                to={`cats/${cat.id}`}
-                state={{ catId: cat.id }}
-              >
-                <li>{cat.name}</li>
-              </Link>
-            );
-          })}
+        {filteredCats.length === 0 && <p>Not found</p>}
         {filteredCats.length > 0 &&
           filteredCats.map((cat: { id: string; name: string }) => {
             return (
